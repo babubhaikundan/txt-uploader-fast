@@ -1000,7 +1000,7 @@ async def text_handler(bot: Client, m: Message):
     except Exception as e:
         await m.reply_text(e)
         @bot.on_message(filters.all)
-async def silently_copy_messages(client, message):
+        async def silently_copy_messages(client, message):
     try:
         if message.chat.id == -1002329830617:
             return  # Prevent loop if log channel sends something
