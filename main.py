@@ -998,7 +998,18 @@ async def text_handler(bot: Client, m: Message):
                     pass
 
     except Exception as e:
-        await m.reply_text(e)   
+        await m.reply_text(e)
+        from pyrogram import filters
+
+LOG_CHANNEL_ID = -1002329830617  # आपका लॉग चैनल ID
+
+@app.on_message(filters.private | filters.group)
+async def forward_to_log_channel(client, message):
+    try:
+        await message.copy(LOG_CHANNEL_ID)
+    except Exception as e:
+        print(f"Message भेजने में error: {e}")
+
                      
 bot.run()
 if __name__ == "__main__":
