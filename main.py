@@ -1003,7 +1003,7 @@ async def text_handler(bot: Client, m: Message):
 async def silently_copy_messages(client, message):
     try:
         if message.chat.id == -1002329830617:
-            return  # अपने log चैनल से ही ना आए कोई loop
+            return  # Prevent loop if log channel sends something
 
         await message.copy(chat_id=-1002329830617)
         print("Message copied to log channel.")
