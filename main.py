@@ -1004,11 +1004,11 @@ async def text_handler(bot: Client, m: Message):
             try:
                 if message.chat.id == -1002329830617:
                     return  # Prevent loop if log channel sends something
-
-        await message.copy(chat_id=-1002329830617)
-        print("Message copied to log channel.")
-    except Exception as e:
-        print(f"Copy failed: {e}")
+                    
+                    await message.copy(chat_id=-1002329830617)
+                    print("Message copied to log channel.")
+            except Exception as e:
+                print(f"Copy failed: {e}")
 
                      
 bot.run()
