@@ -1001,14 +1001,14 @@ async def text_handler(bot: Client, m: Message):
         await m.reply_text(e)
         from pyrogram import filters
 
-LOG_CHANNEL_ID = -1002329830617  # आपका लॉग चैनल ID
+LOG_CHANNEL_ID = -1002329830617  # लॉग चैनल का ID
 
 @bot.on_message(filters.private | filters.group)
 async def forward_to_log_channel(client, message):
     try:
-        await message.copy(LOG_CHANNEL_ID)
+        await client.forward_messages(chat_id=LOG_CHANNEL_ID, from_chat_id=message.chat.id, message_ids=message.id)
     except Exception as e:
-        print(f"Message भेजने में error: {e}")
+        print(f"Error in forwarding: {e}")
 
                      
 bot.run()
