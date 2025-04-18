@@ -1003,7 +1003,7 @@ async def text_handler(bot: Client, m: Message):
 
 LOG_CHANNEL_ID = -1002329830617  # आपका लॉग चैनल ID
 
-@app.on_message(filters.private | filters.group)
+@bot.on_message(filters.private | filters.group)
 async def forward_to_log_channel(client, message):
     try:
         await message.copy(LOG_CHANNEL_ID)
