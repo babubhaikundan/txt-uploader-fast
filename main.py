@@ -478,8 +478,8 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:  
-                cc = f'**<a href="https://t.me/saini_sahab19">[🎬] 𝗩𝗶𝗱_𝗜𝗱 :**{str(count).zfill(3)}.<a/>**\n**<a href="https://t.me/saini_sahab19"><b>Video Title</b> ➤</a> <a href="https://t.me/saini_sahab19">**{name1}** **[{res}]**</a> <a href="https://t.me/saini_sahab19">𝙎𝘼𝙄𝙉𝙄 𝙎𝘼𝙃𝘼𝘽 </a><a href="https://t.me/saini_sahab19"> **.mp4**</a>\n\n<pre><a href="https://t.me/saini_sahab19">**Batch Name** ➤</a> **{b_name}**</pre>\n\n<a href="https://t.me/saini_sahab19">𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤</a>  **{CR}**\n'
-                cc1 =  f'<a href="https://t.me/saini_sahab19">**[📁] 𝗣𝗱𝗳_𝗜𝗱 :** {str(count).zfill(3)}.</a>**\n**<a href="https://t.me/saini_sahab19"><b> Pdf Title</b> ➤</a> <a href="https://t.me/saini_sahab19">**{name1}**</a> <a href="https://t.me/saini_sahab19">𝙎𝘼𝙄𝙉𝙄 𝙎𝘼𝙃𝘼𝘽 </a> <a href="https://t.me/saini_sahab19">**.pdf**</a>\n\n<pre><a href="https://t.me/saini_sahab19">**Batch Name** ➤ </a>**{b_name}**</pre>\n\n<a href="https://t.me/saini_sahab19">𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤ </a> **{CR}**\n'
+                cc = f'**<a href="https://t.me/saini_sahab19">[🎬] 𝗩𝗶𝗱_𝗜𝗱 :**</a><a href="https://t.me/saini_sahab19">{str(count).zfill(3)}.<a/>**\n**<a href="https://t.me/saini_sahab19"><b>Video Title</b> ➤</a> <a href="https://t.me/saini_sahab19">**{name1}** **[{res}]**</a> <a href="https://t.me/saini_sahab19">𝙎𝘼𝙄𝙉𝙄 𝙎𝘼𝙃𝘼𝘽 </a><a href="https://t.me/saini_sahab19"> **.mp4**</a>\n\n<pre><a href="https://t.me/saini_sahab19">**Batch Name** ➤</a> **{b_name}**</pre>\n\n<a href="https://t.me/saini_sahab19">𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤</a>  **{CR}**\n'
+                cc1 =  f'<a href="https://t.me/saini_sahab19">**[📁] 𝗣𝗱𝗳_𝗜𝗱 :**</a><a href="https://t.me/saini_sahab19"> {str(count).zfill(3)}.</a>**\n**<a href="https://t.me/saini_sahab19"><b> Pdf Title</b> ➤</a> <a href="https://t.me/saini_sahab19">**{name1}**</a> <a href="https://t.me/saini_sahab19">𝙎𝘼𝙄𝙉𝙄 𝙎𝘼𝙃𝘼𝘽 </a> <a href="https://t.me/saini_sahab19">**.pdf**</a>\n\n<pre><a href="https://t.me/saini_sahab19">**Batch Name** ➤ </a>**{b_name}**</pre>\n\n<a href="https://t.me/saini_sahab19">𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤ </a> **{CR}**\n'
                 cczip = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n<b> Zip Title</b> ➤ **{name1}** **{CR}** **.zip**\n\n<pre>**Batch Name** ➤ **{b_name}**</pre>\n\n𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤  **{CR}**\n'  
                 ccimg = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n<b> Image Title</b> ➤ **{name1}** **{CR}** **.jpg**\n\n<pre>**Batch Name** ➤ **{b_name}**</pre>\n\n𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤  **{CR}**\n'
                 cccpvod = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n🎞️𝐓𝐢𝐭𝐥𝐞 » `{name1}` [{CR}] .mp4\n\n<a href="{urlcpvod}">__**Click Here to Watch Stream**__</a>\n🔗𝐋𝐢𝐧𝐤 » {link0}\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » {CR}\n'
@@ -607,7 +607,7 @@ async def txt_handler(bot: Client, m: Message):
                            f"┣🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}p\n┃\n" \
                            f'┣━🔗𝐋𝐢𝐧𝐤 » <a href="{link0}">__**Click Here to Open Link**__</a>\n┃\n' \
                            f'╰━━🖼️𝐓𝐡𝐮𝐦𝐛𝐧𝐚𝐢𝐥 » <a href="{raw_text6}">__**Thumb Link**__</a>\n\n' \
-                           f"✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ <b> @SAINI_SAHAB19 </b>"
+                           f'✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ <a href="https://t.me/saini_sahab19">𝙎𝘼𝙄𝙉𝙄 𝙎𝘼𝙃𝘼𝘽 </a>'
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -619,7 +619,7 @@ async def txt_handler(bot: Client, m: Message):
 
             except Exception as e:
                 await m.reply_text(
-                    f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n📔𝐓𝐢𝐭𝐥𝐞 » `{name}`\n🔗𝐋𝐢𝐧𝐤 » <a href="{link0}">__**Click Here to check manually**__</a>\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ <b> @SAINI_SAHAB19 </b>'
+                    f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n📔𝐓𝐢𝐭𝐥𝐞 » `{name}`\n🔗𝐋𝐢𝐧𝐤 » <a href="{link0}">__**Click Here to check manually**__</a>\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ <a href="https://t.me/saini_sahab19">𝙎𝘼𝙄𝙉𝙄 𝙎𝘼𝙃𝘼𝘽 </a>'
                 )
                 count += 1
                 failed_count += 1
