@@ -415,7 +415,7 @@ async def txt_handler(bot: Client, m: Message):
         thumb = raw_text6
 
     await m.reply_text(
-        f"<pre><a href="https://t.me/saini_sahab19">🎯Target Batch ➤</a> {b_name}</pre>"
+        f'<pre><a href="https://t.me/saini_sahab19">🎯Target Batch ➤</a> {b_name}</pre>'
     )
 
     failed_count = 0
