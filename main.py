@@ -116,8 +116,9 @@ import random
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="📞 Contact", url="https://t.me/saini_sahab19"),
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/saini_sahab19"),
+            InlineKeyboardButton(text="🆔 Follow me", url="https://instagram.com/babubhaikundan"),
+            InlineKeyboardButton(text="▶️ Subscribe", url="https://youtube.com/babubhaikundan"),
+            InlineKeyboardButton(text="📞 Contact", url="https://t.me/kundan_yadav_bot"),
         ],
     ]
 )
@@ -126,16 +127,17 @@ keyboard = InlineKeyboardMarkup(
 Busy = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="📞 Contact", url="https://t.me/saini_sahab19"),
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/saini_sahab19"),
+            InlineKeyboardButton(text="🆔 Follow me", url="https://instagram.com/babubhaikundan"),
+            InlineKeyboardButton(text="▶️ Subscribe", url="https://youtube.com/babubhaikundan"),
+            InlineKeyboardButton(text="📞 Contact", url="https://t.me/kundan_yadav_bot"),
         ],
     ]
 )
 
 # Image URLs for the random image feature
 image_urls = [
-    "https://telegra.ph/file/e91729341175f7e6c4e7e.png",
-    "https://telegra.ph/file/e91729341175f7e6c4e7e.png",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdHcZ2YayXQOqG3SC9JdETC4JOMEFC6hE0CBNGmIIOMLhW_WPjT5kQWdGr&s=10",
+    "https://instagram.fpat3-1.fna.fbcdn.net/v/t51.2885-19/315573601_166117896103233_5064134256297899561_n.jpg?_nc_ht=instagram.fpat3-1.fna.fbcdn.net&_nc_cat=109&_nc_oc=Q6cZ2QHp1p2fpx5ML7BW36qN418cdMnUuGXOe_EUVZDilIm-ZFpiWPsFQB6GHlKoJbipij76zD-_ZNUpNPH5XSn65M_6&_nc_ohc=BVitlw1kl00Q7kNvwGYBd6N&_nc_gid=Rx4aIkcaOnz6lQwh6XcVdQ&edm=APoiHPcBAAAA&ccb=7-5&oh=00_AfKVu2qFclOBBa2g3ls1_ys0Kwq_bH9Ox_fYdGifPoRYEg&oe=68392B00&_nc_sid=22de04",
     # Add more image URLs as needed
 ]
 
