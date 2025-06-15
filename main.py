@@ -478,9 +478,9 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:  
-                cc = f'**<a href="https://t.me/saini_sahab19">[🎬] 𝗩𝗶𝗱_𝗜𝗱 ➤**</a><a href="https://t.me/saini_sahab19">{str(count).zfill(3)}<a/>**\n**<a href="https://t.me/saini_sahab19"><b>Video Title</b> ➤</a> <a href="https://t.me/saini_sahab19">**{name1}** **[{res}]**</a> <a href="https://t.me/saini_sahab19">𝙎𝘼𝙄𝙉𝙄 𝙎𝘼𝙃𝘼𝘽 </a><a href="https://t.me/saini_sahab19"> **.mp4**</a>\n\n<pre><a href="https://t.me/saini_sahab19">**Batch Name** ➤</a> **{b_name}**</pre>\n\n<a href="https://t.me/saini_sahab19">𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤</a>  **{CR}**\n'
-                cc1 =  f'<a href="https://t.me/saini_sahab19">**[📁] 𝗣𝗱𝗳_𝗜𝗱 ➤**</a><a href="https://t.me/saini_sahab19"> {str(count).zfill(3)}</a>**\n**<a href="https://t.me/saini_sahab19"><b> Pdf Title</b> ➤</a> <a href="https://t.me/saini_sahab19">**{name1}**</a> <a href="https://t.me/saini_sahab19">𝙎𝘼𝙄𝙉𝙄 𝙎𝘼𝙃𝘼𝘽 </a> <a href="https://t.me/saini_sahab19">**.pdf**</a>\n\n<pre><a href="https://t.me/saini_sahab19">**Batch Name** ➤ </a>**{b_name}**</pre>\n\n<a href="https://t.me/saini_sahab19">𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤ </a> **{CR}**\n'
-                cczip = f'<a href="https://t.me/saini_sahab19">**Zip_ID ➤**[{str(count).zfill(3)}]</a> \n\n<a href="https://t.me/saini_sahab19"><b> Zip Title</b> ➤ **{name1}** **{CR}** **.zip</a>**\n\n<pre>**Batch Name** ➤ **{b_name}**</pre>\n\n𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤  **{CR}**\n'  
+                cc = f'**[🎬] 𝗩𝗶𝗱_𝗜𝗱 ➤**{str(count).zfill(3)}**\n**<b>Video Title</b> ➤**{name1}** **[{res}]** **.mp4**\n\n<pre>**Batch Name** ➤ **{b_name}**</pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 ➤**{CR}**\n'
+                cc1 =  f'**[📁] 𝗣𝗱𝗳_𝗜𝗱 ➤**{str(count).zfill(3)}**\n**<b> Pdf Title</b> ➤**{name1}****.pdf**\n\n<pre>**Batch Name** ➤ **{b_name}**</pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 ➤ **{CR}**\n'
+                cczip = f'**Zip_ID ➤**[{str(count).zfill(3)}]</a> \n\n<a href="https://t.me/saini_sahab19"><b> Zip Title</b> ➤ **{name1}** **{CR}** **.zip</a>**\n\n<pre>**Batch Name** ➤ **{b_name}**</pre>\n\n𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤  **{CR}**\n'  
                 ccimg = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n<b> Image Title</b> ➤ **{name1}** **{CR}** **.jpg**\n\n<pre>**Batch Name** ➤ **{b_name}**</pre>\n\n𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤  **{CR}**\n'
                 cccpvod = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n🎞️𝐓𝐢𝐭𝐥𝐞 » `{name1}` [{CR}] .mp4\n\n<a href="{urlcpvod}">__**Click Here to Watch Stream**__</a>\n🔗𝐋𝐢𝐧𝐤 » {link0}\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » {CR}\n'
                 ccyt = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n🎞️𝐓𝐢𝐭𝐥𝐞 » `{name1}` [{CR}] .mp4\n\n<a href="{url}">__**Click Here to Watch Stream**__</a>\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » {CR}\n'
@@ -607,7 +607,7 @@ async def txt_handler(bot: Client, m: Message):
                            f"┣🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}p\n┃\n" \
                            f'┣━🔗𝐋𝐢𝐧𝐤 » <a href="{link0}">__**Click Here to Open Link**__</a>\n┃\n' \
                            f'╰━━🖼️𝐓𝐡𝐮𝐦𝐛𝐧𝐚𝐢𝐥 » <a href="{raw_text6}">__**Thumb Link**__</a>\n\n' \
-                           f'✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ <a href="https://t.me/saini_sahab19">𝙎𝘼𝙄𝙉𝙄 𝙎𝘼𝙃𝘼𝘽 </a>'
+                           f'✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ <a href="https://t.me/kundan_yadav_bot">𝕂𝕦𝕟𝕕𝕒𝕟 𝕐𝕒𝕕𝕒𝕧 😎 </a>'
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -628,7 +628,7 @@ async def txt_handler(bot: Client, m: Message):
     except Exception as e:
         await m.reply_text(e)
     #await m.reply_text("**🥳𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗗𝗼𝗻𝗲🥳**")
-    await m.reply_text(f'<a href="https://t.me/saini_sahab19">✨𝗕𝗔𝗧𝗖𝗛 𝗦𝗨𝗠𝗠𝗔𝗥𝗬✨\n\n'
+    await m.reply_text(f'<a href="https://t.me/kundan_yadav_bot">✨𝗕𝗔𝗧𝗖𝗛 𝗦𝗨𝗠𝗠𝗔𝗥𝗬✨\n\n'
                        f'▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n'
                        f'📛𝗜𝗻𝗱𝗲𝘅 𝗥𝗮𝗻𝗴𝗲 » ({raw_text} to {len(links)})\n'
                        f'📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲 » **{b_name}**\n\n'
@@ -638,7 +638,7 @@ async def txt_handler(bot: Client, m: Message):
                        f'🔹𝗩𝗶𝗱𝗲𝗼 » {video_count}\n🔹𝗣𝗱𝗳 » {pdf_count}\n🔹𝗜𝗺𝗴 » {img_count}\n🔹𝗭𝗶𝗽 » {zip_count}\n🔹𝗙𝗮𝗶𝗹𝗲𝗱 𝗨𝗿𝗹 » {failed_count}\n\n'
                        f'▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n'
                        f'✅𝗦𝗧𝗔𝗧𝗨𝗦 » 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗</a>')
-    await m.reply_text('📥𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤ <a href="https://t.me/saini_sahab19">𝙎𝘼𝙄𝙉𝙄 𝙎𝘼𝙃𝘼𝘽 </a><a href="https://t.me/saini_sahab19">𝙎𝘼𝙄𝙉𝙄 𝙎𝘼𝙃𝘼𝘽 </a>')
+    await m.reply_text('📥𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤ <a href="https://t.me/saini_sahab19">𝕂𝕦𝕟𝕕𝕒𝕟 𝕐𝕒𝕕𝕒𝕧 😎 </a><a href="https://t.me/saini_sahab19">𝙎𝘼𝙄𝙉𝙄 𝙎𝘼𝙃𝘼𝘽 </a>')
     await m.reply_text(f'<a href="https://t.me/saini_sahab19">『😏𝗥𝗲𝗮𝗰𝘁𝗶𝗼𝗻 𝗞𝗼𝗻 𝗗𝗲𝗴𝗮😏』</a>')                 
 
 @bot.on_message(filters.command(["cp"]) )
